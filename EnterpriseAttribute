@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <soapenv:Header>
+    <fueloauth>{{accessToken}}</fueloauth>
+  </soapenv:Header>
+   <soapenv:Body>
+    <CreateRequest xmlns="http://exacttarget.com/wsdl/partnerAPI">
+        <Options/>
+        <Objects xsi:type="ns2:DataExtension" xmlns:ns2="http://exacttarget.com/wsdl/partnerAPI">
+            <CustomerKey>EnterpriseAttribute Data View</CustomerKey>
+            <Name>EnterpriseAttribute Data View</Name>
+            <Description>Mimics the EnterpriseAttribute Data View</Description>
+            <IsSendable>false</IsSendable>
+            <IsTestable>false</IsTestable>
+            <Fields>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>SubscriberID</CustomerKey>
+                    <Name>SubscriberID</Name>
+                    <Label>SubscriberID</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+            </Fields>
+        </Objects>
+    </CreateRequest>
+</soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <soapenv:Header>
+    <fueloauth>{{accessToken}}</fueloauth>
+  </soapenv:Header>
+   <soapenv:Body>
+    <CreateRequest xmlns="http://exacttarget.com/wsdl/partnerAPI">
+        <Options/>
+        <Objects xsi:type="ns2:DataExtension" xmlns:ns2="http://exacttarget.com/wsdl/partnerAPI">
+            <CustomerKey>Journey Activity Data View</CustomerKey>
+            <Name>Journey Activity Data View</Name>
+            <Description>Mimics the Journey Activity Data View</Description>
+            <IsSendable>false</IsSendable>
+            <IsTestable>false</IsTestable>
+            <Fields>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>VersionID</CustomerKey>
+                    <Name>VersionID</Name>
+                    <Label>VersionID</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>36</MaxLength>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ActivityID</CustomerKey>
+                    <Name>ActivityID</Name>
+                    <Label>ActivityID</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>36</MaxLength>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ActivityName</CustomerKey>
+                    <Name>ActivityName</Name>
+                    <Label>ActivityName</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>200</MaxLength>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ActivityExternalKey</CustomerKey>
+                    <Name>ActivityExternalKey</Name>
+                    <Label>ActivityExternalKey</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>200</MaxLength>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>JourneyActivityObjectID</CustomerKey>
+                    <Name>JourneyActivityObjectID</Name>
+                    <Label>JourneyActivityObjectID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>36</MaxLength>
+                </Field>          
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ActivityType</CustomerKey>
+                    <Name>ActivityType</Name>
+                    <Label>ActivityType</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>256</MaxLength>
+                </Field>
+            </Fields>
+        </Objects>
+    </CreateRequest>
+</soapenv:Body>
+</soapenv:Envelope>

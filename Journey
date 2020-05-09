@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <soapenv:Header>
+    <fueloauth>{{accessToken}}</fueloauth>
+  </soapenv:Header>
+   <soapenv:Body>
+    <CreateRequest xmlns="http://exacttarget.com/wsdl/partnerAPI">
+        <Options/>
+        <Objects xsi:type="ns2:DataExtension" xmlns:ns2="http://exacttarget.com/wsdl/partnerAPI">
+            <CustomerKey>Journey Data View</CustomerKey>
+            <Name>Journey Data View</Name>
+            <Description>Mimics the Journey Data View</Description>
+            <IsSendable>false</IsSendable>
+            <IsTestable>false</IsTestable>
+            <Fields>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>VersionID</CustomerKey>
+                    <Name>VersionID</Name>
+                    <Label>VersionID</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>36</MaxLength>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>JourneyID</CustomerKey>
+                    <Name>JourneyID</Name>
+                    <Label>JourneyID</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>36</MaxLength>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>JourneyName</CustomerKey>
+                    <Name>JourneyName</Name>
+                    <Label>JourneyName</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>400</MaxLength>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>VersionNumber</CustomerKey>
+                    <Name>VersionNumber</Name>
+                    <Label>VersionNumber</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>CreatedDate</CustomerKey>
+                    <Name>CreatedDate</Name>
+                    <Label>CreatedDate</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Date</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>LastPublishedDate</CustomerKey>
+                    <Name>LastPublishedDate</Name>
+                    <Label>LastPublishedDate</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Date</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ModifiedDate</CustomerKey>
+                    <Name>ModifiedDate</Name>
+                    <Label>ModifiedDate</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Date</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>JourneyStatus</CustomerKey>
+                    <Name>JourneyStatus</Name>
+                    <Label>JourneyStatus</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>100</MaxLength>
+                </Field>
+            </Fields>
+        </Objects>
+    </CreateRequest>
+</soapenv:Body>
+</soapenv:Envelope>

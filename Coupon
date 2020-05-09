@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <soapenv:Header>
+    <fueloauth>{{accessToken}}</fueloauth>
+  </soapenv:Header>
+   <soapenv:Body>
+    <CreateRequest xmlns="http://exacttarget.com/wsdl/partnerAPI">
+        <Options/>
+        <Objects xsi:type="ns2:DataExtension" xmlns:ns2="http://exacttarget.com/wsdl/partnerAPI">
+            <CustomerKey>Coupon Data View</CustomerKey>
+            <Name>Coupon Data View</Name>
+            <Description>Mimics the Coupon Data View</Description>
+            <IsSendable>false</IsSendable>
+            <IsTestable>false</IsTestable>
+            <Fields>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>Name</CustomerKey>
+                    <Name>Name</Name>
+                    <Label>Name</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>50</MaxLength>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ExternalKey</CustomerKey>
+                    <Name>ExternalKey</Name>
+                    <Label>ExternalKey</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>50</MaxLength>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>Description</CustomerKey>
+                    <Name>Description</Name>
+                    <Label>Description</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>50</MaxLength>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>BeginDate</CustomerKey>
+                    <Name>BeginDate</Name>
+                    <Label>BeginDate</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Date</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ExpirationDate</CustomerKey>
+                    <Name>ExpirationDate</Name>
+                    <Label>ExpirationDate</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Date</FieldType>
+                </Field>
+            </Fields>
+        </Objects>
+    </CreateRequest>
+</soapenv:Body>
+</soapenv:Envelope>

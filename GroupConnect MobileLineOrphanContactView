@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <soapenv:Header>
+    <fueloauth>{{accessToken}}</fueloauth>
+  </soapenv:Header>
+   <soapenv:Body>
+    <CreateRequest xmlns="http://exacttarget.com/wsdl/partnerAPI">
+        <Options/>
+        <Objects xsi:type="ns2:DataExtension" xmlns:ns2="http://exacttarget.com/wsdl/partnerAPI">
+            <CustomerKey>GroupConnect MobileLineOrphanContactView Data View</CustomerKey>
+            <Name>GroupConnect MobileLineOrphanContactView Data View</Name>
+            <Description>Mimics the GroupConnect MobileLineOrphanContactView Data View</Description>
+            <IsSendable>false</IsSendable>
+            <IsTestable>false</IsTestable>
+            <Fields>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ContactID</CustomerKey>
+                    <Name>ContactID</Name>
+                    <Label>ContactID</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ContactKey</CustomerKey>
+                    <Name>ContactKey</Name>
+                    <Label>ContactKey</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>AddressID</CustomerKey>
+                    <Name>AddressID</Name>
+                    <Label>AddressID</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>CreatedDate</CustomerKey>
+                    <Name>CreatedDate</Name>
+                    <Label>CreatedDate</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Date</FieldType>
+                </Field>
+            </Fields>
+        </Objects>
+    </CreateRequest>
+</soapenv:Body>
+</soapenv:Envelope>

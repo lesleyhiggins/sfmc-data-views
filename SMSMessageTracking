@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <soapenv:Header>
+    <fueloauth>{{accessToken}}</fueloauth>
+  </soapenv:Header>
+   <soapenv:Body>
+    <CreateRequest xmlns="http://exacttarget.com/wsdl/partnerAPI">
+        <Options/>
+        <Objects xsi:type="ns2:DataExtension" xmlns:ns2="http://exacttarget.com/wsdl/partnerAPI">
+            <CustomerKey>SMSMessageTracking Data View</CustomerKey>
+            <Name>SMSMessageTracking Data View</Name>
+            <Description>Mimics the SMSMessageTracking Data View</Description>
+            <IsSendable>false</IsSendable>
+            <IsTestable>false</IsTestable>
+            <Fields>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>MobileMessageTrackingID</CustomerKey>
+                    <Name>MobileMessageTrackingID</Name>
+                    <Label>MobileMessageTrackingID</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>EID</CustomerKey>
+                    <Name>EID</Name>
+                    <Label>EID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>Mobile</CustomerKey>
+                    <Name>Mobile</Name>
+                    <Label>Mobile</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Phone</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>MessageID</CustomerKey>
+                    <Name>MessageID</Name>
+                    <Label>MessageID</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>KeywordID</CustomerKey>
+                    <Name>KeywordID</Name>
+                    <Label>KeywordID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>CodeID</CustomerKey>
+                    <Name>CodeID</Name>
+                    <Label>CodeID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ConversationID</CustomerKey>
+                    <Name>ConversationID</Name>
+                    <Label>ConversationID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>CampaignID</CustomerKey>
+                    <Name>CampaignID</Name>
+                    <Label>CampaignID</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>Sent</CustomerKey>
+                    <Name>Sent</Name>
+                    <Label>Sent</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Boolean</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>Delivered</CustomerKey>
+                    <Name>Delivered</Name>
+                    <Label>Delivered</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Boolean</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>Undelivered</CustomerKey>
+                    <Name>Undelivered</Name>
+                    <Label>Undelivered</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Boolean</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>Unsub</CustomerKey>
+                    <Name>Unsub</Name>
+                    <Label>Unsub</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>OptIn</CustomerKey>
+                    <Name>OptIn</Name>
+                    <Label>OptIn</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Boolean</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>OptOut</CustomerKey>
+                    <Name>OptOut</Name>
+                    <Label>OptOut</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Boolean</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>Outbound</CustomerKey>
+                    <Name>Outbound</Name>
+                    <Label>Outbound</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Boolean</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>Inbound</CustomerKey>
+                    <Name>Inbound</Name>
+                    <Label>Inbound</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Boolean</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>CreateDateTime</CustomerKey>
+                    <Name>CreateDateTime</Name>
+                    <Label>CreateDateTime</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Date</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ModifiedDateTime</CustomerKey>
+                    <Name>ModifiedDateTime</Name>
+                    <Label>ModifiedDateTime</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Date</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ActionDateTime</CustomerKey>
+                    <Name>ActionDateTime</Name>
+                    <Label>ActionDateTime</Label>
+                    <IsRequired>true</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Date</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>MessageText</CustomerKey>
+                    <Name>MessageText</Name>
+                    <Label>MessageText</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>160</MaxLength>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>IsTest</CustomerKey>
+                    <Name>IsTest</Name>
+                    <Label>IsTest</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Boolean</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>MobileMessageRecurrenceID</CustomerKey>
+                    <Name>MobileMessageRecurrenceID</Name>
+                    <Label>MobileMessageRecurrenceID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ResponseToMobileMessageTrackingID</CustomerKey>
+                    <Name>ResponseToMobileMessageTrackingID</Name>
+                    <Label>ResponseToMobileMessageTrackingID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>IsValid</CustomerKey>
+                    <Name>IsValid</Name>
+                    <Label>IsValid</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Boolean</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>InvalidationCode</CustomerKey>
+                    <Name>InvalidationCode</Name>
+                    <Label>InvalidationCode</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>SendID</CustomerKey>
+                    <Name>SendID</Name>
+                    <Label>SendID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>SendSplitID</CustomerKey>
+                    <Name>SendSplitID</Name>
+                    <Label>SendSplitID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>SendSegmentID</CustomerKey>
+                    <Name>SendSegmentID</Name>
+                    <Label>SendSegmentID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>SendJobID</CustomerKey>
+                    <Name>SendJobID</Name>
+                    <Label>SendJobID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>SendGroupID</CustomerKey>
+                    <Name>SendGroupID</Name>
+                    <Label>SendGroupID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>SendPersonID</CustomerKey>
+                    <Name>SendPersonID</Name>
+                    <Label>SendPersonID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>SubscriberID</CustomerKey>
+                    <Name>SubscriberID</Name>
+                    <Label>SubscriberID</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>SubscriberKey</CustomerKey>
+                    <Name>SubscriberKey</Name>
+                    <Label>SubscriberKey</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                    <MaxLength>254</MaxLength>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>SMSStandardStatusCodeId</CustomerKey>
+                    <Name>SMSStandardStatusCodeId</Name>
+                    <Label>SMSStandardStatusCodeId</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>Description</CustomerKey>
+                    <Name>Description</Name>
+                    <Label>Description</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>Name</CustomerKey>
+                    <Name>Name</Name>
+                    <Label>Name</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>ShortCode</CustomerKey>
+                    <Name>ShortCode</Name>
+                    <Label>ShortCode</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Number</FieldType>
+                </Field>
+                <Field xsi:type="ns2:DataExtensionField">
+                    <CustomerKey>SharedKeyword</CustomerKey>
+                    <Name>SharedKeyword</Name>
+                    <Label>SharedKeyword</Label>
+                    <IsRequired>false</IsRequired>
+                    <IsPrimaryKey>false</IsPrimaryKey>
+                    <FieldType>Text</FieldType>
+                </Field>
+            </Fields>
+        </Objects>
+    </CreateRequest>
+</soapenv:Body>
+</soapenv:Envelope>

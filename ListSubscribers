@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <soapenv:Header>
+    <fueloauth>{{accessToken}}</fueloauth>
+  </soapenv:Header>
+   <soapenv:Body>
+    <CreateRequest xmlns="http://exacttarget.com/wsdl/partnerAPI">
+        <Options/>
+        <Objects xsi:type="ns2:DataExtension" xmlns:ns2="http://exacttarget.com/wsdl/partnerAPI">
+            <CustomerKey>ListSubscribers Data View</CustomerKey>
+            <Name>ListSubscribers Data View</Name>
+            <Description>Mimics the ListSubscribers Data View</Description>
+            <IsSendable>false</IsSendable>
+            <IsTestable>false</IsTestable>
+            <Fields>
+              <Field xsi:type="ns2:DataExtensionField">
+                  <CustomerKey>AddedBy</CustomerKey>
+                  <Name>AddedBy</Name>
+                  <Label>AddedBy</Label>
+                  <IsRequired>true</IsRequired>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <FieldType>Number</FieldType>
+              </Field>
+              <Field xsi:type="ns2:DataExtensionField">
+                  <CustomerKey>AddMethod</CustomerKey>
+                  <Name>AddMethod</Name>
+                  <Label>AddMethod</Label>
+                  <IsRequired>true</IsRequired>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <FieldType>Text</FieldType>
+                  <MaxLength>17</MaxLength>
+              </Field>
+              <Field xsi:type="ns2:DataExtensionField">
+                  <CustomerKey>CreatedDate</CustomerKey>
+                  <Name>CreatedDate</Name>
+                  <Label>CreatedDate</Label>
+                  <IsRequired>false</IsRequired>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <FieldType>Date</FieldType>
+              </Field>
+              <Field xsi:type="ns2:DataExtensionField">
+                  <CustomerKey>DateUnsubscribed</CustomerKey>
+                  <Name>DateUnsubscribed</Name>
+                  <Label>DateUnsubscribed</Label>
+                  <IsRequired>false</IsRequired>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <FieldType>Date</FieldType>
+              </Field>
+              <Field xsi:type="ns2:DataExtensionField">
+                  <CustomerKey>EmailAddress</CustomerKey>
+                  <Name>EmailAddress</Name>
+                  <Label>EmailAddress</Label>
+                  <IsRequired>false</IsRequired>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <FieldType>Text</FieldType>
+                  <MaxLength>100</MaxLength>
+              </Field>
+              <Field xsi:type="ns2:DataExtensionField">
+                  <CustomerKey>ListID</CustomerKey>
+                  <Name>ListID</Name>
+                  <Label>ListID</Label>
+                  <IsRequired>false</IsRequired>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <FieldType>Number</FieldType>
+              </Field>
+              <Field xsi:type="ns2:DataExtensionField">
+                  <CustomerKey>ListName</CustomerKey>
+                  <Name>ListName</Name>
+                  <Label>ListName</Label>
+                  <IsRequired>false</IsRequired>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <FieldType>Text</FieldType>
+                  <MaxLength>50</MaxLength>
+              </Field>
+              <Field xsi:type="ns2:DataExtensionField">
+                  <CustomerKey>ListType</CustomerKey>
+                  <Name>ListType</Name>
+                  <Label>ListType</Label>
+                  <IsRequired>true</IsRequired>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <FieldType>Text</FieldType>
+                  <MaxLength>16</MaxLength>
+              </Field>
+              <Field xsi:type="ns2:DataExtensionField">
+                  <CustomerKey>Status</CustomerKey>
+                  <Name>Status</Name>
+                  <Label>Status</Label>
+                  <IsRequired>false</IsRequired>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <FieldType>Text</FieldType>
+                  <MaxLength>12</MaxLength>
+              </Field>
+              <Field xsi:type="ns2:DataExtensionField">
+                  <CustomerKey>SubscriberID</CustomerKey>
+                  <Name>SubscriberID</Name>
+                  <Label>SubscriberID</Label>
+                  <IsRequired>false</IsRequired>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <FieldType>Number</FieldType>
+              </Field>
+              <Field xsi:type="ns2:DataExtensionField">
+                  <CustomerKey>SubscriberKey</CustomerKey>
+                  <Name>SubscriberKey</Name>
+                  <Label>SubscriberKey</Label>
+                  <IsRequired>false</IsRequired>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <FieldType>Text</FieldType>
+                  <MaxLength>254</MaxLength>
+              </Field>
+              <Field xsi:type="ns2:DataExtensionField">
+                  <CustomerKey>SubscriberType</CustomerKey>
+                  <Name>SubscriberType</Name>
+                  <Label>SubscriberType</Label>
+                  <IsRequired>false</IsRequired>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <FieldType>Text</FieldType>
+                  <MaxLength>100</MaxLength>
+              </Field>
+            </Fields>
+        </Objects>
+    </CreateRequest>
+</soapenv:Body>
+</soapenv:Envelope>
